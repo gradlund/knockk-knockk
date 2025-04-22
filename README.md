@@ -22,15 +22,10 @@ View a resident | |
 Connect with a resident | |
 Edit profile  |  |
 
-A non-functional requirement of 'not storing passwords [in the database] as clear text' by implementing the BCryptPasswordEncoder in the Spring Boot Application. 
+A non-functional requirement of `not storing passwords [in the database] as clear text` by implementing the BCryptPasswordEncoder in the Spring Boot Application. 
 
 
 ### Technologies Chosen
-The project was powered by: <br>
-<img src="
-![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)	
-![Spring Boot](https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot,w_200.png)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
 | **Technology** | **Version** | **Purpose** | **Chosen** |
 | -------------- | ----------- | ----------- | ---------- |
@@ -51,9 +46,43 @@ The project was powered by: <br>
 | Word | v16.80 | Tool for documentation. | Team is familiar with Word. Easy to create documents. |
 
 ### Best Practices
+I did
 
 ### Deployed in the cloud? CI/CD
+
 ### What'd you learn? Why?
+Proof of concepts where developed LIST PROOF OF CONCEPTS
+
+
+And I learned a few dad jokes along the way... <br>
+<br> Knock Knock... <br>
+*Who's there?* <br>
+Boo. <br>
+*Boo who?* <br>
+Don't cry - it's just a joke! <br>
 ### What technical approach did you take? Include a variety of design diagrams, class diagrams, etc. to support the technical aspects of your project.
+
 ### What risks and challenges did you have? How did you overcome these and what resources did you use?  What risk management approaches did you take?
+There were three main challenges I overcame.
+1. **Time**: The first semester focused on designing and architecting, while the second semester involved coding, testing, and debugging.
+
+2. **Team size**: Knockk was developed by a single developer, resulting in slower sprint velocity compared to what a larger team might accomplish.
+
+3. **Techincal debt**: A lone developer learned all areas of the project and thus could not specialize. This favored MVP development over code optimization. The guiding principle was, “make it work, make it pretty, make it fast”.
+
+#### Risks
+To mitigate risks, a risk management plan was assembled. None of these risks turned into issues. A few risks included:
+| **Event Risk** | **Risk Probability** | **Risk Impact** | **Risk Mitigation** | **Contingency Plan** |
+| -------------- | ---- | -------------- | ------------------ | ------------------- |
+| Figma starts incurring charges. | <span style="color: green"> Low </span> | The team would have to pay $20 a month. | The team will keep up to date with Figma policies and charges. | Word will be used for wireframing. |
+| The admin application is not fully functioning. | Low | Users will not be able to use the mobile application because the admin must verify the user before their account becomes activated. | Create the admin application at the first few stages of the application. | The project would be placed in jeopardy of completion. Minimal functionality will be completed with a basic UI design. |
+| The team has little experience with React Native. | Medium | The team would not be able to build the front-end applications. | Research and create a proof of concept using React Native by 10/14/2024. | If React Native is not the best choice, Flutter will be pursued. |
+| The team has no experience with JWTs. | Medium | API will not be secured appropriately giving anyone access to the endpoints. | If all features in scope are completed before 5/3/2025, real-time databases will be researched, and a proof of concept will be developed. | Initially out of scope. |
+| The team has no experience deploying to the App or Google Play stores. | Medium | The mobile application will not be deployed to the App or Google Play stores. | If all features in scope are completed before 5/3/2025, research will be done on how to deploy to the stores. | Initially out of scope. |
+
+
 ### What outstanding issues do you have?
+To develop this into a production ready network, I would like a few more features to be implemented... but I also don't want to waste my - and potential co-founders - time(s) by planning, designing, and coding new features *if* no one will even use the application. I want to ensure sales, before further development is made. So, I plan on reworking the UI and pitching it to a few clients before continuing to phase two... more details soon!
+
+### AI awknowledgement
+While I did utilize ChatGPT 4.0 mini and Grok for creating JUnit tests, they were *not* used for code generation.

@@ -6,7 +6,8 @@
 Knockk is a project aimed to create a network for residents of a building complext... **but why**?
 
 At present, *no* social network exists for apartment building residents, leaving neighbors strangers to one another.  Knockk is here to solve that. 
-> Mark 12:30-31 says, “Love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.’31 The second is this: ‘Love your neighbor as yourself.’ There is no commandment greater than these” (New International Version, 1973/2011, Mark 12:30-31).
+> Mark 12:30-31 says, “Love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.’31 The second is this: ‘Love your neighbor as yourself.’ There is no commandment greater than these” (New International Version, 1973/2011, Mark 12:30-31). [^1]
+[^1]: New International Version. (20011). Bible Gateway. https://www.biblegateway.com/versions/New-International-Version-NIV-Bible (Original work published 1973)
 
 The bible commands us to love your neighbor as yourself, but most people do not know their neighbors. With Knockk, residents can get to know who lives around them and connect to form Godly relationships that will benefit God’s kingdom.
 
@@ -47,6 +48,7 @@ A non-functional requirement of `not storing passwords [in the database] as clea
 
 ### Best Practices
 I did
+I owe a lot of thanks to my mentor, Mark Reha, for instilling best practices that will set me apart when I transition to the work place. 
 
 ### Deployed in the cloud? CI/CD
 
@@ -74,11 +76,13 @@ There were three main challenges I overcame.
 To mitigate risks, a risk management plan was assembled. None of these risks turned into issues. A few risks included:
 | **Event Risk** | **Risk Probability** | **Risk Impact** | **Risk Mitigation** | **Contingency Plan** |
 | -------------- | ---- | -------------- | ------------------ | ------------------- |
-| Figma starts incurring charges. | <span style="color: green"> Low </span> | The team would have to pay $20 a month. | The team will keep up to date with Figma policies and charges. | Word will be used for wireframing. |
-| The admin application is not fully functioning. | Low | Users will not be able to use the mobile application because the admin must verify the user before their account becomes activated. | Create the admin application at the first few stages of the application. | The project would be placed in jeopardy of completion. Minimal functionality will be completed with a basic UI design. |
-| The team has little experience with React Native. | Medium | The team would not be able to build the front-end applications. | Research and create a proof of concept using React Native by 10/14/2024. | If React Native is not the best choice, Flutter will be pursued. |
-| The team has no experience with JWTs. | Medium | API will not be secured appropriately giving anyone access to the endpoints. | If all features in scope are completed before 5/3/2025, real-time databases will be researched, and a proof of concept will be developed. | Initially out of scope. |
-| The team has no experience deploying to the App or Google Play stores. | Medium | The mobile application will not be deployed to the App or Google Play stores. | If all features in scope are completed before 5/3/2025, research will be done on how to deploy to the stores. | Initially out of scope. |
+| Figma starts incurring charges. | $${\color{green}Low}$$  | The team would have to pay $20 a month. | The team will keep up to date with Figma policies and charges. | Word will be used for wireframing. |
+| The admin application is not fully functioning. | $${\color{green}Low}$$ | Users will not be able to use the mobile application because the admin must verify the user before their account becomes activated. | Create the admin application at the first few stages of the application. | The project would be placed in jeopardy of completion. Minimal functionality will be completed with a basic UI design. |
+| The team has little experience with React Native. | $${\color{orange}Medium}$$ | The team would not be able to build the front-end applications. | Research and create a proof of concept using React Native by 10/14/2024. | If React Native is not the best choice, Flutter will be pursued. |
+| The team has no experience with JWTs. | $${\color{orange}Medium}$$ | API will not be secured appropriately giving anyone access to the endpoints. | If all features in scope are completed before 5/3/2025, real-time databases will be researched, and a proof of concept will be developed. | Initially out of scope. |
+| The team has no experience deploying to the App or Google Play stores. | $${\color{orange}Medium}$$ | The mobile application will not be deployed to the App or Google Play stores. | If all features in scope are completed before 5/3/2025, research will be done on how to deploy to the stores. | Initially out of scope. |
+
+*Refer to the project proposal for more risks.*
 
 
 ### What outstanding issues do you have?
@@ -86,3 +90,26 @@ To develop this into a production ready network, I would like a few more feature
 
 ### AI awknowledgement
 While I did utilize ChatGPT 4.0 mini and Grok for creating JUnit tests, they were *not* used for code generation.
+
+### Special Thanks
+To **Mark Reha** and **James Sparks**.
+
+### Copyright Compliance
+Draw.io – Usage Terms - https://www.drawio.com/doc/faq/usage-terms <br>
+Draw.io is the proposed program that will be used for project diagramming. It is widely used at Grand Canyon University. <br><br>
+Express – Terms of Use - https://images.prismic.io/openjsf/ <br>
+Express is the proposed framework for the development of a Rest API. It is a common framework used across the software industry. <br><br>
+Figma – Terms of Service - https://www.figma.com/legal/tos/ <br>
+Figma is the proposed prototyping/wireframing program for front-end applications. The student version will be used for free. It is commonly used in the industry. <br><br>
+GitHub – Terms of Service - https://docs.github.com/en/site-policy/github-terms/github-terms-of-service <br>
+GitHub is the proposed program for version management. It will store all the repositories for the project. It is commonly used in the software industry. <br><br>
+Jira – Customer Agreement - https://www.atlassian.com/legal/atlassian-customer-agreement#intro <br>
+Jira is the proposed program for project management. It will break large tasks into smaller ones so that progress on the project can be viewed and organized. It is commonly used in the industry. <br><br>
+MySQL – Terms of Use - https://www.oracle.com/legal/terms/ <br>
+MySQL is the proposed database management system. It is commonly used in the industry. <br><br>
+React and React Native – Terms of Use - https://opensource.fb.com/legal/terms/ <br>
+Both React and React Native are developed by Meta. The two are proposed for the development of front-end applications. React will be used for the web application and React Native for the mobile application. They are both common frameworks in the industry. <br><br>
+Word – Terms of Use - https://www.microsoft.com/en-us/legal/terms-of-use <br>
+Word is the proposed program for project documentation. Files will be backed up on OneDrive so they can be accessed from anywhere. It is commonly used in the industry.
+
+

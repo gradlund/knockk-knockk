@@ -65,8 +65,17 @@ Don't cry - it's just a joke! <br>
 
 ### What technical approach did you take? Include a variety of design diagrams, class diagrams, etc. to support the technical aspects of your project.
 Logical:
+![Logical Solution Design.png](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/Logical%20Solution%20Design.png)
+ADD DESCRIPTION
 
 Physcial:
+![Physical Solution Design.png](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/Physical%20Solution%20Design.png)
+
+Sitemap:
+![Sitempap](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/Sitemap.pdf)
+
+The uml is a little to big to include, but you can visit it [here](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/API%20UML.pdf)
+
 
 
 ### What risks and challenges did you have? How did you overcome these and what resources did you use?  What risk management approaches did you take?

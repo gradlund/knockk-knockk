@@ -12,7 +12,7 @@ At present, *no* social network exists for apartment building residents, leaving
 The bible commands us to love your neighbor as yourself, but most people do not know their neighbors. With Knockk, residents can get to know who lives around them and connect to form Godly relationships that will benefit God’s kingdom.
 
 ### To solve this...
-Two user facing applications (and one API) was developed. Phase 1 of creating this network invloved implementing these features:
+Two user facing applications, and one API, were developed. Phase 1 of creating this network invloved implementing the following features:
 
 | Admin     | Resident |
 | ----------- | ----------- |
@@ -62,7 +62,12 @@ And I learned a few dad jokes along the way... <br>
 Boo. <br>
 *Boo who?* <br>
 Don't cry - it's just a joke! <br>
+
 ### What technical approach did you take? Include a variety of design diagrams, class diagrams, etc. to support the technical aspects of your project.
+Logical:
+
+Physcial:
+
 
 ### What risks and challenges did you have? How did you overcome these and what resources did you use?  What risk management approaches did you take?
 There were three main challenges I overcame.

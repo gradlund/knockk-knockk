@@ -16,7 +16,7 @@ The bible commands us to love your neighbor as yourself, but most people do not 
 ### To solve this...
 Two user facing applications, and one API, were developed. Phase 1 of creating this network invloved implementing the following features:
 
-| Admin     | Resident |
+| Resident     | Admin |
 | ----------- | ----------- |
 | Account creation | Verify residents |
 View units (above, below, and to the sides) | Manage residents |

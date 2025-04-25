@@ -27,6 +27,9 @@ Edit profile  |  |
 
 A non-functional requirement of `not storing passwords [in the database] as clear text` by implementing the BCryptPasswordEncoder in the Spring Boot Application. 
 
+> [!TIP]
+> Please visit [demos](https://github.com/gradlund/knockk-knockk/tree/main/demo) for demonstrations of the applications.
+
 
 ### Technologies Chosen
 
@@ -136,23 +139,3 @@ Please visit the following repositories for code as well as code drop functional
 
 ### Special Thanks
 To **Mark Reha** and **James Sparks**.
-
-### Copyright Compliance
-Draw.io – Usage Terms - https://www.drawio.com/doc/faq/usage-terms <br>
-Draw.io is the proposed program that will be used for project diagramming. It is widely used at Grand Canyon University. <br><br>
-Express – Terms of Use - https://images.prismic.io/openjsf/ <br>
-Express is the proposed framework for the development of a Rest API. It is a common framework used across the software industry. <br><br>
-Figma – Terms of Service - https://www.figma.com/legal/tos/ <br>
-Figma is the proposed prototyping/wireframing program for front-end applications. The student version will be used for free. It is commonly used in the industry. <br><br>
-GitHub – Terms of Service - https://docs.github.com/en/site-policy/github-terms/github-terms-of-service <br>
-GitHub is the proposed program for version management. It will store all the repositories for the project. It is commonly used in the software industry. <br><br>
-Jira – Customer Agreement - https://www.atlassian.com/legal/atlassian-customer-agreement#intro <br>
-Jira is the proposed program for project management. It will break large tasks into smaller ones so that progress on the project can be viewed and organized. It is commonly used in the industry. <br><br>
-MySQL – Terms of Use - https://www.oracle.com/legal/terms/ <br>
-MySQL is the proposed database management system. It is commonly used in the industry. <br><br>
-React and React Native – Terms of Use - https://opensource.fb.com/legal/terms/ <br>
-Both React and React Native are developed by Meta. The two are proposed for the development of front-end applications. React will be used for the web application and React Native for the mobile application. They are both common frameworks in the industry. <br><br>
-Word – Terms of Use - https://www.microsoft.com/en-us/legal/terms-of-use <br>
-Word is the proposed program for project documentation. Files will be backed up on OneDrive so they can be accessed from anywhere. It is commonly used in the industry.
-
-

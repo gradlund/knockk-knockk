@@ -47,44 +47,66 @@ A non-functional requirement of `not storing passwords [in the database] as clea
 | Word | v16.80 | Tool for documentation. | Team is familiar with Word. Easy to create documents. |
 
 ### Best Practices
-I did
-I owe a lot of thanks to my mentor, Mark Reha, for instilling best practices that will set me apart when I transition to the work place. 
+I owe a lot of thanks to my mentor, Mark Reha, for instilling best practices that will set me apart when I transition to the work place. For example, I did not utilizing the API Supabase provides because it would lock in my frontend applications, i.e., it would not be interoperable. If the database is shifted to AWS, the API would need to be rewritten.
 
-### Deployed in the cloud? CI/CD
+### How I decided upon the tech stack
+Upon completing the project proposal, proof of concepts were developed. <br />
 
-### What'd you learn? Why?
-Proof of concepts where developed LIST PROOF OF CONCEPTS
+Proof of concepts of React, React Native, Flutter, Expo, Express, and Supabase were all developed. From these, a tech stack was decided. Everything has pros and cons, and software is no exception - but as the saying goes, you have to pick your poison. The rational for the tech stack can be found below:
 
+<h5>Frontend</h3>
+<ul><bold>React Native</bold> was chosen for developing the cross-platform front-end applications. Initially, React was going to be used for developing the admin application, but it was decided that learning two different frameworks for two frontend applications would be a lot of work. Before React Native was decided upon, Flutter was also pursued. Flutter’s common struggle with “nesting h*ll” and the use of Dart, which is Flutter specific, ultimately led to choosing React Native. Expo is the framework of choice for building the React Native application - this framework is the recommended choice of React Native developers and speeds up the development process of React Native applications.</ul>
 
-And I learned a few dad jokes along the way... <br>
-<br> Knock Knock... <br>
-*Who's there?* <br>
-Boo. <br>
-*Boo who?* <br>
-Don't cry - it's just a joke! <br>
+<h5>Backend</h5>
+<ul>Spring Boot was chosen for developing the REST API. REST was chosen over GraphQL, simply because the team is more familiar with it and there are already other technologies that need to be learned. Building the API with Express was pursued as an option, but the lack of object-oriented principles because of the use of JavaScript led to Spring Boot being selected. Spring Data JDBC will be used for querying the database.</ul>
 
-### What technical approach did you take? Include a variety of design diagrams, class diagrams, etc. to support the technical aspects of your project.
-Logical:
-![Logical Solution Design.png](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/Logical%20Solution%20Design.png)
-ADD DESCRIPTION
+<h5>Database</h5>
+<ul>Supabase was chosen as the cloud provider for the Postgres database. Not only was it chosen because it has a cool name, but because it hosts the database in the cloud, making it accessible. Postgres was decided because of the relational database advantages – creating relationships between tables.</ul>
 
-Physcial:
-![Physical Solution Design.png](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/Physical%20Solution%20Design.png)
+> [!NOTE]
+> I had *no* prior experience with Expo or Supbase. 
+<br />
 
-Sitemap:
-![Sitempap](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/Sitemap.pdf)
-
-The uml is a little to big to include, but you can visit it [here](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/API%20UML.pdf)
-
+> [!WARNING]
+> And I learned a few dad jokes along the way... <br>
+> <br> Knock Knock... <br>
+> *Who's there?* <br>
+> Boo. <br>
+> *Boo who?* <br>
+> Don't cry - it's just a joke! <br>
 
 
-### What risks and challenges did you have? How did you overcome these and what resources did you use?  What risk management approaches did you take?
+### Technical Approach
+
+Agile and the scrum methodology where implemented in this project. It is important to remember that this project is a marathon, not a sprint – figuratively speaking - so, sprints where broken into two weeks. Jira was used to manage these tasks.
+Two frontend applications, a backend, and a database where designed and development. The front-end applications  utilized Expo, a React Native framework. The frontend communicates to the REST API backend, which utilized Spring Boot. The API communicates with the Postgres database, hosted on Supabase. And of course, mentorship was key to ensure that best practices are being implemented.
+
+
+**Logical:** <br /><br />
+<img src="https://github.com/gradlund/knockk-knockk/blob/main/artifacts/Logical%20Solution%20Design.png" alt="logical solution design" width="50%" align="center" /> <br />
+This design provides a high-level overview of the project utilizing Expo, Spring Boot, and Supabase.
+The two client applications, Knockk-Admin and Knockk-Resident will be built with Expo. React has a twist to N-layer architecture and combines the presentation and business layer together. This presentation and business layer contains the app and components folders. Utilizing the expo-router library, file-based routing will be used to manage screens. Subfolders inside of the app folder will have files that define the screens of the application. To abstract components from the screens, there is a separate component folder to where these components will reside. The presentation layer will contain the assets folder which will include stylesheets (utilizing NativeWinds), fonts, images, etc. The business layer will make use of state, and util. State will utilize Zustand, which is a lightweight state management library, and will eliminate excess prop drilling. The util folder will have services that make requests to the database - axios will be used for making network calls. Securing the API is an out-of-scope feature (high on the list) which means that the connection – for now – will not be secure. BCrypt will be used to hash passwords, making it harder for a hacker to steal credentials because they aren’t in plain text. The response between the Expo application and Spring Boot API will be transmitted with JSON, using HTTP. <br />
+The Server, built with Spring Boot, adheres to the standard N-layer architecture. The presentation class includes the REST controllers, which utilize business services (apart of the business layer). The business services will utilize data services, which will utilize repositories to communicate to the Postgres database. Models will be passed between controllers and business services, and entities will be passed between services and between data services and repositories. <br /><br />
+
+
+**Physcial:** <br /><br />
+<img src="https://github.com/gradlund/knockk-knockk/blob/main/artifacts/Physical%20Solution%20Design.png" width="50%" alt="physical solution design" /> <br />
+Expo Deployment Builds will be used for building the front-end applications. The Knockk-Admin application will be opened in the web on port 8081. For development, Google Chrome will be used, however Expo also supports other browsers like Edge and Safari. The Knockk-Resident application can be run on Android or iOS using an Android Emulator (using Android Studio) or iOS Simulator (using XCode). Expo SDK 51 supports iOS 13.4+ and Android 6+, so the devices and their operating systems versions could be changed by the developer if necessary. Both the admin and resident applications will make requests to the API using HTTP, port 3000. The REST API will connect to Supabase using port 6543, with HTTPS. Port 6543 is Supabase’s session port which supports prepared statements, unlike Supabase’s transaction port. <br />
+
+
+The uml is a little to big to include, but you can visit it [here](https://github.com/gradlund/knockk-knockk/blob/main/artifacts/API%20UML.pdf).
+
+### Risks and Challenges
 There were three main challenges I overcame.
 1. **Time**: The first semester focused on designing and architecting, while the second semester involved coding, testing, and debugging.
 
 2. **Team size**: Knockk was developed by a single developer, resulting in slower sprint velocity compared to what a larger team might accomplish.
 
 3. **Techincal debt**: A lone developer learned all areas of the project and thus could not specialize. This favored MVP development over code optimization. The guiding principle was, “make it work, make it pretty, make it fast”.
+
+> [!NOTE]
+> A risk management plan was also prepared during the proposal of this project, which ensured risks wouldn't turn into *issues*. View the table below for a few examples.
+
 
 #### Risks
 To mitigate risks, a risk management plan was assembled. None of these risks turned into issues. A few risks included:
@@ -100,9 +122,9 @@ To mitigate risks, a risk management plan was assembled. None of these risks tur
 
 
 ### What outstanding issues do you have?
-To develop this into a production ready network, I would like a few more features to be implemented... but I also don't want to waste my - and potential co-founders - time(s) by planning, designing, and coding new features *if* no one will even use the application. I want to ensure sales, before further development is made. So, I plan on reworking the UI and pitching it to a few clients before continuing to phase two... more details soon!
+To develop this into a ready to use network, I would like a few more features to be implemented... but I also don't want to waste my - and potential co-founders - time(s) by planning, designing, and coding new features *if* no one will even use the application. I want to ensure sales, before further development is made. So, I plan on reworking the UI and pitching it to a few clients before continuing to phase two... more details soon!
 
-### AI awknowledgement
+### AI acknowledgement
 While I did utilize ChatGPT 4.0 mini and Grok for creating JUnit tests, they were *not* used for code generation.
 
 ### Special Thanks

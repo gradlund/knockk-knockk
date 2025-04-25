@@ -1,7 +1,9 @@
-# Knockk : Project Portfolio
-*A social networking applcation*
+<h3>Knockk : Project Portfolio</h3>
 
-## Overview
+*A social networking application*
+
+![gif](https://github.com/user-attachments/assets/0cda61b5-61ee-443a-a431-bcfbbda627c0)
+
 ### What is Knockk?
 Knockk is a project aimed to create a network for residents of a building complext... **but why**?
 
@@ -120,12 +122,17 @@ To mitigate risks, a risk management plan was assembled. None of these risks tur
 
 *Refer to the project proposal for more risks.*
 
-
 ### What outstanding issues do you have?
 To develop this into a ready to use network, I would like a few more features to be implemented... but I also don't want to waste my - and potential co-founders - time(s) by planning, designing, and coding new features *if* no one will even use the application. I want to ensure sales, before further development is made. So, I plan on reworking the UI and pitching it to a few clients before continuing to phase two... more details soon!
 
 ### AI acknowledgement
 While I did utilize ChatGPT 4.0 mini and Grok for creating JUnit tests, they were *not* used for code generation.
+
+### Code Repositories
+Please visit the following repositories for code as well as code drop functionality videos. <br />
+> <a href="https://github.com/gradlund/knockk-admin">Admin</a> : repo for the web admin application <br />
+> <a href="https://github.com/gradlund/knockk-resident">Resident</a> : repo for the mobile resident application <br />
+> <a href="https://github.com/gradlund/knockk-api">API</a> : repo for the api <br />
 
 ### Special Thanks
 To **Mark Reha** and **James Sparks**.
